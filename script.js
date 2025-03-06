@@ -7,9 +7,10 @@ window.addEventListener('load', function() {
 
   let week = document.querySelector('.week');
   for(let i=0; i<wk.length; i++){
-      week.createElement("div");
-    
-  }
+      let weekDiv = decument.createElement("div");
+      week.appendChild(weekDiv);
+      weekDiv.textContent = wk[i];
+      }
   let week = document.querySelector('.period');
   
 });
