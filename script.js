@@ -13,7 +13,7 @@ window.addEventListener("load", () => {
     "클라우드기초",
   ]
     const crnm = [
-      "휴개실",
+      "휴계실",
       "메타버스콘텐츠",
       "인공지능융합",
       "인공지능프로그램",
@@ -35,11 +35,11 @@ window.addEventListener("load", () => {
     {
       time: "09:00-09:50",
       classes: [
-        { subject: cnm[0], teacher: nm[0], classroom: "메타버스콘텐츠 실습실" },
-        { subject: cnm[1], teacher: nm[1], classroom: "인공지능프로그램실습실" },
-        { subject: cnm[2], teacher: nm[2], classroom: "인공지능융합실습실" },
-        { subject: cnm[3], teacher: nm[3], classroom: "메타버스콘텐츠 실습실" },
-        { subject: cnm[1], teacher: nm[1], classroom: "인공지능프로그램실습실" },
+        { subject: cnm[0], teacher: nm[0], classroom: crnm[1] },
+        { subject: cnm[1], teacher: nm[1], classroom: crnm[3] },
+        { subject: cnm[2], teacher: nm[2], classroom: crnm[1] },
+        { subject: cnm[3], teacher: nm[3], classroom: crnm[1] },
+        { subject: cnm[1], teacher: nm[1], classroom: crnm[1] },
       ],
     },
     // 2교시
