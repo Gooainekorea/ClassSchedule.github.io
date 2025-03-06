@@ -8,6 +8,7 @@ window.addEventListener('load', function() {
   let week = document.queryselector('.week');
   for(let i=0; i<wk.length; i++){
       week.createElement("div");
+    
   }
   let week = document.queryselector('.period');
   
