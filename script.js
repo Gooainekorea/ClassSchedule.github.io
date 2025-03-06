@@ -15,12 +15,6 @@ window.addEventListener("load", function () {
 
   let scheduleDiv = document.querySelector(".schedule");
 
-  // 그리드 컨테이너 설정
-  scheduleDiv.style.display = "grid";
-  scheduleDiv.style.gridTemplateColumns = "100px repeat(5, 1fr)";
-  scheduleDiv.style.gridTemplateRows = "50px repeat(9, 1fr)";
-  scheduleDiv.style.gap = "2px";
-
   // 헤더 (첫 번째 칸은 빈 칸)
   let emptyDiv = document.createElement("div");
   emptyDiv.classList.add("cell", "header");
