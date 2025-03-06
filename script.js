@@ -6,7 +6,7 @@ window.addEventListener('load', function() {
   const crpw = ["8520","1973"];
 
   let week = document.queryselector('.week');
-  week.createElement("div").innerHTML("test");
+  week.createElement("div").innerhtml("test");
   let week = document.queryselector('.period');
   
 });
