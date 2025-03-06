@@ -37,9 +37,9 @@ window.addEventListener("load", () => {
       classes: [
         { subject: cnm[0], teacher: nm[0], classroom: crnm[1] },
         { subject: cnm[1], teacher: nm[1], classroom: crnm[3] },
-        { subject: cnm[2], teacher: nm[2], classroom: crnm[1] },
+        { subject: cnm[2], teacher: nm[2], classroom: crnm[2] },
         { subject: cnm[3], teacher: nm[3], classroom: crnm[1] },
-        { subject: cnm[1], teacher: nm[1], classroom: crnm[1] },
+        { subject: cnm[1], teacher: nm[1], classroom: crnm[3] },
       ],
     },
     // 2교시
