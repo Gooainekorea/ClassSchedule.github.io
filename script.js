@@ -5,5 +5,8 @@ window.addEventListener('load', function() {
   const crnm = ["휴개실","메타버스콘텐츠","인공지능융합","인공지능프로그램","인공지능데이터"];
   const crpw = ["8520","1973"];
 
+  let week = document.queryselector('.week');
+  week.createElement("div").innerHTML("test");
+  let week = document.queryselector('.period');
   
 });
