@@ -1,19 +1,31 @@
 <!DOCTYPE html>
 <html lang="ko">
-  <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>시간표</title>
-      <link href="reset.css" rel="stylesheet" type="text/css">
-      <link href="style.css" rel="stylesheet" type="text/css">
-      <script src="script.js" type="text/javascript"></script>
-  </head>
-  <body>
-      <h2>시간표</h2>
-      <div class="wrap">
-        <div class="schedule"></div>
-        <div class="week"></div>
-        <div class="period"></div>
-      </div>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>하이테크 시간표</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>대상 : 하이테크</h1>
+    <table id="timetable">
+      <thead>
+        <tr>
+          <th rowspan="2">교시</th>
+          <th rowspan="2">구분</th>
+          <th colspan="5">인공지능SW융합과</th>
+        </tr>
+        <tr id="weekdays">
+          <!-- 요일은 JavaScript로 채워집니다 -->
+        </tr>
+      </thead>
+      <tbody id="timetable-body">
+        <!-- 시간표 내용은 JavaScript로 채워집니다 -->
+      </tbody>
+    </table>
+  </div>
+  <script src="script.js"></script>
+</body>
 </html>
+
