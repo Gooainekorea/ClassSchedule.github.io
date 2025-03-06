@@ -7,7 +7,7 @@ window.addEventListener('load', function() {
 
   let week = document.querySelector('.week');
   for(let i=0; i<wk.length; i++){
-      let weekDiv = decument.createElement("div");
+      let weekDiv = document.createElement("div");
       week.appendChild(weekDiv);
       weekDiv.textContent = wk[i];
       }
