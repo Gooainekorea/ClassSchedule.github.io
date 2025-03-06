@@ -1,23 +1,92 @@
-@charset "utf-8";
-.schedule {
-  display: grid;
-  width: 100%;
-  max-width: 800px;
-  margin: 20px auto;
-  padding: 5px;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Malgun Gothic", sans-serif;
 }
 
-.cell {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: 1px solid black;
-  padding: 10px;
+body {
+  padding: 20px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h1 {
   text-align: center;
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+th,
+td {
+  border: 1px solid #333;
+  text-align: center;
+  padding: 5px;
   font-size: 14px;
 }
 
-.header {
-  background-color: #ddd;
-  font-weight: bold;
+th {
+  background-color: #f0f0f0;
 }
+
+thead tr:first-child th {
+  background-color: #d9d2e9;
+}
+
+.period-cell {
+  width: 50px;
+  background-color: #f0f0f0;
+}
+
+.time-label {
+  font-size: 10px;
+  color: #666;
+}
+
+.subject {
+  font-weight: bold;
+  padding: 3px 0;
+}
+
+.teacher {
+  padding: 3px 0;
+}
+
+.classroom {
+  padding: 3px 0;
+}
+
+/* 과목별 색상 */
+.subject-color-1 {
+  background-color: #d9d2e9; /* 인공지능개론 등 - 연보라색 */
+}
+
+.subject-color-2 {
+  background-color: #fff2cc; /* AI딥러닝모델기초 등 - 노란색 */
+}
+
+.subject-color-3 {
+  background-color: #cfe2f3; /* IoT클라우드플랫폼 등 - 파란색 */
+}
+
+.subject-color-4 {
+  background-color: #d9ead3; /* 서버운영체제 등 - 연두색 */
+}
+
+.subject-color-5 {
+  background-color: #fce5cd; /* 클라우드기초 등 - 살구색 */
+}
+
+.empty-cell {
+  background-color: #ffffff;
+}
+
