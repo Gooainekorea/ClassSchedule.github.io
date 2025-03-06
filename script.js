@@ -13,8 +13,13 @@ window.addEventListener("load", () => {
     "클라우드기초",
   ]
     const crnm = [
-      "휴개실","메타버스콘텐츠","인공지능융합","인공지능프로그램","인공지능데이터"
+      "휴개실",
+      "메타버스콘텐츠",
+      "인공지능융합",
+      "인공지능프로그램",
+      "인공지능데이터"
     ];
+    const crpw = ["8520","1973"];
   
   // 요일 헤더 생성
   const weekdaysRow = document.getElementById("weekdays")
