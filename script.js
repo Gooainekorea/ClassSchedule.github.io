@@ -6,11 +6,17 @@ window.addEventListener('load', function() {
   const crpw = ["8520","1973"];
 
   let week = document.querySelector('.week');
+  let period= document.querySelector('.period');
+  
   for(let i=0; i<wk.length; i++){
       let weekDiv = document.createElement("div");
       week.appendChild(weekDiv);
       weekDiv.textContent = wk[i];
       }
   let week = document.querySelector('.period');
-  
+    for (let i = 1; i <= 9; i++) {
+    let periodItem = document.createElement("div");
+    periodItem.textContent = `${i}교시`;
+    periodDiv.appendChild(periodItem);
+  }
 });
