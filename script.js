@@ -30,107 +30,86 @@ window.addEventListener("load", () => {
   })
 
   // 시간표 데이터 정의
-  const timetableData = [
-    // 1교시
-    {
-      time: "09:00-09:50",
-      classes: [
-        { subject: cnm[0], teacher: nm[0], classroom: crnm[1] },
-        { subject: cnm[1], teacher: nm[1], classroom: crnm[3] },
-        { subject: cnm[2], teacher: nm[2], classroom: crnm[2] },
-        { subject: cnm[3], teacher: nm[3], classroom: crnm[1] },
-        { subject: cnm[1], teacher: nm[1], classroom: crnm[3] },
-      ],
-    },
-    // 2교시
-    {
-      time: "10:00-10:50",
-      classes: [
-        { subject: cnm[0], teacher: nm[0], classroom: "메타버스콘텐츠 실습실" },
-        { subject: cnm[1], teacher: nm[1], classroom: "인공지능프로그램실습실" },
-        { subject: cnm[2], teacher: nm[2], classroom: "인공지능융합실습실" },
-        { subject: cnm[3], teacher: nm[3], classroom: "메타버스콘텐츠 실습실" },
-        { subject: cnm[1], teacher: nm[1], classroom: "인공지능프로그램실습실" },
-      ],
-    },
-    // 3교시
-    {
-      time: "11:00-11:50",
-      classes: [
-        { subject: cnm[4], teacher: nm[4], classroom: "인공지능데이터실습실" },
-        { subject: cnm[1], teacher: nm[1], classroom: "인공지능프로그램실습실" },
-        { subject: cnm[2], teacher: nm[2], classroom: "인공지능융합실습실" },
-        { subject: cnm[3], teacher: nm[3], classroom: "메타버스콘텐츠 실습실" },
-        { subject: cnm[1], teacher: nm[1], classroom: "인공지능데이터실습실" },
-      ],
-    },
-    // 4교시
-    {
-      time: "12:00-12:50",
-      classes: [
-        { subject: "", teacher: "", classroom: "" },
-        { subject: "", teacher: "", classroom: "" },
-        { subject: "", teacher: "", classroom: "" },
-        { subject: "", teacher: "", classroom: "" },
-        { subject: "", teacher: "", classroom: "" },
-      ],
-    },
-    // 5교시
-    {
-      time: "13:00-13:50",
-      classes: [
-        { subject: cnm[4], teacher: nm[4], classroom: "인공지능데이터실습실" },
-        { subject: "클라우드기초", teacher: "홍성일", classroom: "인공지능데이터실습실" },
-        { subject: cnm[2], teacher: nm[2], classroom: "인공지능융합실습실" },
-        { subject: cnm[3], teacher: nm[3], classroom: "메타버스콘텐츠 실습실" },
-        { subject: "AI로봇영상처리", teacher: "조혜정", classroom: "메타버스콘텐츠 실습실" },
-      ],
-    },
-    // 6교시
-    {
-      time: "14:00-14:50",
-      classes: [
-        { subject: cnm[4], teacher: nm[4], classroom: "인공지능데이터실습실" },
-        { subject: "클라우드기초", teacher: "홍성일", classroom: "인공지능데이터실습실" },
-        { subject: "자료구조", teacher: "김대웅", classroom: "인공지능융합실습실" },
-        { subject: "AI로봇영상처리", teacher: "조혜정", classroom: "메타버스콘텐츠 실습실" },
-        { subject: "데이터베이스구현", teacher: "조혜정", classroom: "메타버스콘텐츠 실습실" },
-      ],
-    },
-    // 7교시
-    {
-      time: "15:00-15:50",
-      classes: [
-        { subject: cnm[4], teacher: nm[4], classroom: "인공지능데이터실습실" },
-        { subject: "클라우드기초", teacher: "조혜정", classroom: "인공지능데이터실습실" },
-        { subject: "자료구조", teacher: "김대웅", classroom: "인공지능융합실습실" },
-        { subject: "AI로봇영상처리", teacher: "조혜정", classroom: "메타버스콘텐츠 실습실" },
-        { subject: "데이터베이스구현", teacher: "조혜정", classroom: "메타버스콘텐츠 실습실" },
-      ],
-    },
-    // 8교시
-    {
-      time: "16:00-16:50",
-      classes: [
-        { subject: "", teacher: "", classroom: "" },
-        { subject: "클라우드기초", teacher: "조혜정", classroom: "인공지능데이터실습실" },
-        { subject: "자료구조", teacher: "김대웅", classroom: "인공지능융합실습실" },
-        { subject: "AI로봇영상처리", teacher: "조혜정", classroom: "메타버스콘텐츠 실습실" },
-        { subject: "", teacher: "", classroom: "" },
-      ],
-    },
-    // 9교시
-    {
-      time: "17:00-17:50",
-      classes: [
-        { subject: "", teacher: "", classroom: "" },
-        { subject: "클라우드기초", teacher: "조혜정", classroom: "인공지능데이터실습실" },
-        { subject: "자료구조", teacher: "김대웅", classroom: "인공지능융합실습실" },
-        { subject: "AI로봇영상처리", teacher: "조혜정", classroom: "메타버스콘텐츠 실습실" },
-        { subject: "", teacher: "", classroom: "" },
-      ],
-    },
-  ]
+const timetableData = [
+  // 1교시
+  {
+    time: "09:00-09:50",
+    classes: [
+      { subject: cnm[0], teacher: nm[0], classroom: crnm[1] },
+      { subject: cnm[1], teacher: nm[1], classroom: crnm[3] },
+      { subject: cnm[2], teacher: nm[2], classroom: crnm[2] },
+      { subject: cnm[3], teacher: nm[3], classroom: crnm[1] },
+      { subject: cnm[1], teacher: nm[1], classroom: crnm[3] },
+    ],
+  },
+  // 2교시
+  {
+    time: "10:00-10:50",
+    classes: [
+      { subject: cnm[4], teacher: nm[4], classroom: crnm[4] },
+      { subject: cnm[5], teacher: nm[5], classroom: crnm[2] },
+      { subject: cnm[6], teacher: nm[0], classroom: crnm[3] },
+      { subject: cnm[7], teacher: nm[1], classroom: crnm[1] },
+      { subject: cnm[8], teacher: nm[2], classroom: crnm[4] },
+    ],
+  },
+  // 3교시
+  {
+    time: "11:00-11:50",
+    classes: [
+      { subject: cnm[1], teacher: nm[1], classroom: crnm[3] },
+      { subject: cnm[3], teacher: nm[3], classroom: crnm[1] },
+      { subject: cnm[5], teacher: nm[5], classroom: crnm[2] },
+      { subject: cnm[7], teacher: nm[1], classroom: crnm[1] },
+      { subject: cnm[0], teacher: nm[0], classroom: crnm[1] },
+    ],
+  },
+  // 4교시
+  {
+    time: "12:00-12:50",
+    classes: [
+      { subject: cnm[2], teacher: nm[2], classroom: crnm[2] },
+      { subject: cnm[4], teacher: nm[4], classroom: crnm[4] },
+      { subject: cnm[6], teacher: nm[0], classroom: crnm[3] },
+      { subject: cnm[8], teacher: nm[2], classroom: crnm[4] },
+      { subject: cnm[3], teacher: nm[3], classroom: crnm[1] },
+    ],
+  },
+  // 점심 시간
+  {
+    time: "12:50-13:50",
+    classes: [
+      { subject: "점심 시간", teacher: "", classroom: crnm[0] },
+      { subject: "점심 시간", teacher: "", classroom: crnm[0] },
+      { subject: "점심 시간", teacher: "", classroom: crnm[0] },
+      { subject: "점심 시간", teacher: "", classroom: crnm[0] },
+      { subject: "점심 시간", teacher: "", classroom: crnm[0] },
+    ],
+  },
+  // 5교시
+  {
+    time: "13:50-14:40",
+    classes: [
+      { subject: cnm[5], teacher: nm[5], classroom: crnm[2] },
+      { subject: cnm[7], teacher: nm[1], classroom: crnm[1] },
+      { subject: cnm[0], teacher: nm[0], classroom: crnm[1] },
+      { subject: cnm[2], teacher: nm[2], classroom: crnm[2] },
+      { subject: cnm[4], teacher: nm[4], classroom: crnm[4] },
+    ],
+  },
+  // 6교시
+  {
+    time: "14:50-15:40",
+    classes: [
+      { subject: cnm[6], teacher: nm[0], classroom: crnm[3] },
+      { subject: cnm[8], teacher: nm[2], classroom: crnm[4] },
+      { subject: cnm[1], teacher: nm[1], classroom: crnm[3] },
+      { subject: cnm[3], teacher: nm[3], classroom: crnm[1] },
+      { subject: cnm[5], teacher: nm[5], classroom: crnm[2] },
+    ],
+  },
+];
+
 
   // 과목별 색상 매핑
   const subjectColorMap = {
