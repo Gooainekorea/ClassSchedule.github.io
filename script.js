@@ -41,11 +41,6 @@ window.addEventListener("load", function () {
       let cell = document.createElement("div");
       cell.classList.add("cell");
 
-      // 과목 및 교수 랜덤 배정
-      let subjectIndex = Math.floor(Math.random() * cnm.length);
-      let professorIndex = Math.floor(Math.random() * nm.length);
-      cell.textContent = `${cnm[subjectIndex]} (${nm[professorIndex]})`;
-
       scheduleDiv.appendChild(cell);
     }
   }
