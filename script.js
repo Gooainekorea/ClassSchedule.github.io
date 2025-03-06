@@ -5,15 +5,14 @@ window.addEventListener('load', function() {
   const crnm = ["휴개실","메타버스콘텐츠","인공지능융합","인공지능프로그램","인공지능데이터"];
   const crpw = ["8520","1973"];
 
-  let week = document.querySelector('.week');
-  let period= document.querySelector('.period');
+  let weekDiv = document.querySelector('.week');
+  let periodDiv= document.querySelector('.period');
   
   for(let i=0; i<wk.length; i++){
-      let weekDiv = document.createElement("div");
-      week.appendChild(weekDiv);
-      weekDiv.textContent = wk[i];
+      let dayDiv = document.createElement("div");
+      weekDiv.appendChild(dayDiv);
+      dayDiv.textContent = wk[i];
       }
-  let week = document.querySelector('.period');
     for (let i = 1; i <= 9; i++) {
     let periodItem = document.createElement("div");
     periodItem.textContent = `${i}교시`;
