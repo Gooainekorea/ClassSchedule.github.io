@@ -1,6 +1,7 @@
 window.addEventListener("load", () => {
-  const wk = ["월", "화", "수", "목", "금"]
-  const nm = ["조혜정", "김정래", "김대웅", "한민욱", "홍성일", "김용중"]
+  const wk = ["월", "화", "수", "목", "금"];
+  const nm = ["조혜정", "김정래", "김대웅", "한민욱", "홍성일", "김용중"];
+  const period = [];
   const cnm = [
     "인공지능개론",
     "AI딥러닝모델기초",
@@ -11,7 +12,7 @@ window.addEventListener("load", () => {
     "데이터베이스구현",
     "자료구조",
     "클라우드기초",
-  ]
+  ];
     const crnm = [
       "휴계실",
       "메타버스콘텐츠",
@@ -22,11 +23,11 @@ window.addEventListener("load", () => {
     const crpw = ["8520","1973"];
   
   // 요일 헤더 생성
-  const weekdaysRow = document.getElementById("weekdays")
+  const weekdaysRow = document.getElementById("weekdays");
   wk.forEach((day) => {
-    const th = document.createElement("th")
+    const th = document.createElement("th");
     th.textContent = day
-    weekdaysRow.appendChild(th)
+    weekdaysRow.appendChild(th);
   })
 
   // 시간표 데이터 정의
